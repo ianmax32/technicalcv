@@ -22,9 +22,11 @@ const FooterMain = styled.footer`
     background-color:#2d3045;
     color:white;
     width: 100%;
-    height: 60px;
-    position: absolute;
+    height: 65px;
+    position: relative;
+    margin:0;
     bottom: 0px;
     display:flex;
     justify-content:space-around;
+    
 `;

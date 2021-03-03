@@ -11,7 +11,6 @@ import Portfolio from './Components/Portfolio';
 function App() {
   return (
     <div className="App">
-      
       <BrowserRouter>
       <Navigation />
         <Switch>
