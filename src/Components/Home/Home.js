@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {faEnvelopeSquare } from '@fortawesome/free-solid-svg-icons'
 
 function Home() {
     return (
@@ -13,10 +15,42 @@ function Home() {
             position of Software Developer. Bringing expertise in writing full-stack code to support multiple platforms, 
             including web, android, and desktop applications, and a solid grasp of data structures and object- oriented designs</p>
             <ButtonLink>
-            <Link to='/contact' className='btn text-white'>Get in touch</Link>
+            <Link to='/contact' className='btn text-white'><FontAwesomeIcon icon={faEnvelopeSquare}/> Get in touch</Link>
             </ButtonLink>
 
-            
+            <HomeCoures>
+            <div id="carouselExampleSlidesOnly" className="carousel slide" data-ride="carousel">
+                <div className="carousel-inner">
+                    <div className="carousel-item active">
+                        <img className="rounded-10 mx-auto d-block w-50" src="./languageicons/java.jpg" alt="First slide"/>
+                    </div>
+                    <div className="carousel-item">
+                        <img className="rounded-10 mx-auto d-block w-50" src="./languageicons/csharp.jpg" alt="Second slide"/>
+                    </div>
+                    <div className="carousel-item">
+                        <img className="rounded-10 mx-auto d-block w-50" src="./languageicons/asp.png" alt="Third slide"/>
+                    </div>
+                    <div className="carousel-item">
+                        <img className="rounded-10 mx-auto d-block w-50" src="./languageicons/android.png" alt="Third slide"/>
+                    </div>
+                    <div className="carousel-item">
+                        <img className="rounded-10 mx-auto d-block w-50" src="./languageicons/css.jpg" alt="Third slide"/>
+                    </div>
+                    <div className="carousel-item">
+                        <img className="rounded-10 mx-auto d-block w-50" src="./languageicons/javaee.png" alt="Third slide"/>
+                    </div>
+                    <div className="carousel-item">
+                        <img className="rounded-10 mx-auto d-block w-50" src="./languageicons/javascript.png" alt="Third slide"/>
+                    </div>
+                    <div className="carousel-item">
+                        <img className="rounded-10 mx-auto d-block w-50" src="./languageicons/react.png" alt="Third slide"/>
+                    </div>
+                    <div className="carousel-item">
+                        <img className="rounded-10 mx-auto d-block w-50" src="./languageicons/HTML5.png" alt="Third slide"/>
+                    </div>
+                </div>
+            </div>
+            </HomeCoures>
         </HomeMain>
         
     )
@@ -26,13 +60,13 @@ export default Home
 const HomeMain = styled.div`
     background-image:url('./homebackground.jpg');
     background-color: #cccccc; /* Used if the image is unavailable */
-    height: 570px; /* You must set a specified height */
+    height: 670px; /* You must set a specified height */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover;
     color:white;
-    padding:20px;
     text-align:center;
+    height:grid-auto-columns;
     
     >h5{
         color:limegreen;
@@ -49,5 +83,17 @@ const ButtonLink = styled.button`
     &:hover{
         background-color:transparent;
         color:white;
+    }
+`;
+
+const HomeCoures = styled.div`
+    >div >div >div{
+        border-radius:5px;
+    }
+    >div >div >div >img{
+        width: 200px;
+        height: 300px; 
+        margin:5px;
+        object-fit:contain;
     }
 `;

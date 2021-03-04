@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState} from 'react'
 import styled from 'styled-components';
 
 function Project(props) {
@@ -9,15 +9,26 @@ function Project(props) {
                     <ImageCoures>
                     <div className="carousel-inner">
                         <div className="carousel-item active">
-                            <img className="d-block" src={props.src1} alt="First slide"/>
+                            <img className="d-block mx-auto" src={props.src1} alt="First slide"/>
                         </div>
+
                         <div className="carousel-item">
-                            <img className="d-block" src={props.src2} alt="Second slide"/>
+                            <img className="d-block mx-auto" src={props.src2} alt="second slide"/>
                         </div>
+
                         <div className="carousel-item">
-                            <img className="d-block" src={props.src3} alt="Third slide" />
+                            <img className="d-block mx-auto" src={props.src3} alt="third slide"/>
                         </div>
+
+                        <div className="carousel-item">
+                            <img className="d-block" src={props.src4} alt="forth slide"/>
                         </div>
+
+                        <div className="carousel-item">
+                            <img className="d-block" src={props.src5} alt="fifth slide"/>
+                        </div>
+                        
+                    </div>
                     </ImageCoures>
                 
             </div>
@@ -25,7 +36,7 @@ function Project(props) {
                 <p>{props.description}</p>
             </div>
             <div>
-                <p>Github link{props.gitLink}</p>
+                <p>Github link<a href={props.gitLink}> <button className='btn btn-outline-info'>View</button></a></p>
             </div>
         </ProjectMain>
     )
@@ -34,18 +45,20 @@ function Project(props) {
 export default Project;
 const ProjectMain = styled.div`
     padding:10px;
-    color:white;
+    color:black;
     margin:auto;
     text-align:center;
 `;
 
 const ImageCoures = styled.div`
     >div >div >img {
-        border-radius:20px;
+        border-radius:10px;
         padding:5px;
         display: block;
         margin-left: auto;
         margin-right: auto;
-        width: 50%;
+        width: 440px;
+        object-fit:contain;
+        
     }
 `;

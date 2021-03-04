@@ -1,6 +1,10 @@
 import React from 'react'
 import styled from 'styled-components'
 import {BrowserRouter as Router, Link} from 'react-router-dom'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faAddressBook, faAddressCard, faBriefcase, faEnvelopeSquare, faHome } from '@fortawesome/free-solid-svg-icons'
+
+
 function Navigation() {
     return (
         <div>
@@ -12,10 +16,10 @@ function Navigation() {
 
             <div className="collapse navbar-collapse float-right" id="navbarTop">
                 <div className="navbar-nav mr-auto">
-                    <Link to='/' className="nav-item text-white nav-link p-3">Home</Link>
-                    <Link to='/About' className="nav-item text-white nav-link p-3">About</Link> 
-                    <Link to='/Portfolio' className="nav-item text-white nav-link p-3">Portfolio</Link> 
-                    <Link to='/Contact' className="nav-item text-white nav-link p-3">Contact</Link>    
+                    <Link to='/' className="nav-item text-white nav-link p-3"><FontAwesomeIcon icon={faHome}/> Home</Link>
+                    <Link to='/About' className="nav-item text-white nav-link p-3"><FontAwesomeIcon icon={faAddressCard}/> About</Link> 
+                    <Link to='/Portfolio' className="nav-item text-white nav-link p-3"><FontAwesomeIcon icon={faBriefcase}/> Portfolio</Link> 
+                    <Link to='/Contact' className="nav-item text-white nav-link p-3"><FontAwesomeIcon icon={faEnvelopeSquare}/> Contact</Link>    
                 </div>
             </div>
             </NavigationMain> 

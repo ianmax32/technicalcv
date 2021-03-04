@@ -1,17 +1,72 @@
 import React from 'react'
 import styled from 'styled-components'
-function Contact() {
-    return (
-        <ContactMain>
+import emailjs from 'emailjs-com'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {faFacebookf,faInstagram } from '@fortawesome/free-solid-svg-icons'
+
+class Contact extends React.Component {
+    constructor(props){
+        super(props);
+        this.state={
+            name:'',
+            email:'',
+            message:'',
+            disabled:false
+        }
+
+        this.handleChange = this.handleChange.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
+        this.sendEmail = this.sendEmail.bind(this);
+    }
+    
+    handleChange(e){
+        const value = e.target.value;
+        const name = e.target.name;
+
+        this.setState({
+            [name]:value
+        })
+    }
+    
+
+    handleSubmit(e){
+        e.preventDefault();
+        this.sendEmail(e);
+        e.target.reset();
+        this.setState({
+            name:'',
+            email:'',
+            message:'',
+            disabled:true
+        })
+        alert('Email has been sent.');
+    }
+
+    sendEmail(e){
+        emailjs.sendForm(`service_kvppv3p`, 'template_eoxcj8b', e.target, `user_Sxnj17gpr1eMNmOa2XmAu`)
+          .then((result) => {
+              console.log(result.text);
+          }, (error) => {
+              console.log(error.text);
+          });
+    }
+
+    render() {
+        return(
+            <ContactMain>
             <h1 className='text-center'>Contact Me</h1>
-            <form>
-            <input className='form-control m-3' type='text' placeholder='Full Name'/>
-            <input className='form-control m-3' type='email' placeholder='Email'/>
-            <input className='input-field form-control m-3' type='text' placeholder='Enter your message here'/>
+            <form onSubmit={this.handleSubmit}>
+            <input className='form-control m-3' name="name" type='text' placeholder='Full Name' value={this.state.name} onChange={this.handleChange}/>
+            <input className='form-control m-3' name='email' type='email' placeholder='Email' value={this.state.email} onChange={this.handleChange}/>
+            <input className='input-field form-control m-3' name='message' type='text' placeholder='Enter your message here' value={this.state.message} onChange={this.handleChange}/>
             <button className='btn btn-primary d-inline-block' type='submit'>Submit</button>
             </form>
+
+            
         </ContactMain>
-    )
+        
+        )
+    }
 }
 
 export default Contact

@@ -61,13 +61,14 @@ const AboutMain = styled.div`
     color:white;
     margin:1px;
     height:auto;
-    border-radius:20px;
+    
 `;
 
 const AboutInfo = styled.div`
     background-color:transparent;
     box-shadow: 10px 10px 5px #aaaaaa;
     border:1px solid #bfbfbf;
+    border-radius:10px;
     padding: 10px;
     margin-bottom:15px;
     width:100%;
