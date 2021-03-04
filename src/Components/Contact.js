@@ -83,6 +83,8 @@ const ContactMain = styled.div`
     padding-bottom:10px;
     box-shadow:10px 10px 5px #bfbfbf;
      
+   
+
     >form{
         margin-left: 15%;
         margin-right:15%;

@@ -33,5 +33,8 @@ const FooterMain = styled.footer`
     bottom: 0px;
     display:flex;
     justify-content:space-around;
-    
+    @media screen and (max-width:500px){
+        height:15vh;
+        
+    }
 `;

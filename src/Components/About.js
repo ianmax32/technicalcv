@@ -61,7 +61,7 @@ const AboutMain = styled.div`
     color:white;
     margin:1px;
     height:auto;
-    
+   
 `;
 
 const AboutInfo = styled.div`

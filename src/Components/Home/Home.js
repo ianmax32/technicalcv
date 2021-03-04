@@ -6,6 +6,7 @@ import {faEnvelopeSquare } from '@fortawesome/free-solid-svg-icons'
 
 function Home() {
     return (
+        
         <HomeMain>
             <h5>Hi , i am</h5>
             <h1>Ian Masaga</h1>
@@ -75,7 +76,7 @@ const HomeMain = styled.div`
     color:white;
     text-align:center;
     height:grid-auto-columns;
-    
+   
     >h5{
         color:limegreen;
     }

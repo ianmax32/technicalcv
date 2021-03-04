@@ -1,0 +1,47 @@
+[debug] [2021-03-04T21:52:03.938Z] ----------------------------------------------------------------------
+[debug] [2021-03-04T21:52:03.940Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\masag\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-03-04T21:52:03.940Z] CLI Version:   9.5.0
+[debug] [2021-03-04T21:52:03.940Z] Platform:      win32
+[debug] [2021-03-04T21:52:03.940Z] Node Version:  v12.18.4
+[debug] [2021-03-04T21:52:03.941Z] Time:          Thu Mar 04 2021 23:52:03 GMT+0200 (South Africa Standard Time)
+[debug] [2021-03-04T21:52:03.942Z] ----------------------------------------------------------------------
+[debug] [2021-03-04T21:52:03.942Z] 
+[debug] [2021-03-04T21:52:03.948Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-03-04T21:52:03.948Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\masag\Desktop\technicalcv
+
+Before we get started, keep in mind:
+
+  * You are initializing in an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using masagaian. 
+[debug] [2021-03-04T21:52:26.131Z] > refreshing access token with scopes: []
+[debug] [2021-03-04T21:52:26.133Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-03-04T21:52:29.926Z] <<< HTTP RESPONSE 200 {"date":"Thu, 04 Mar 2021 21:52:28 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-03-04T21:52:30.025Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/masagaian [none]
+[debug] [2021-03-04T21:52:32.390Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/masagaian 200
+[debug] [2021-03-04T21:52:32.390Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/masagaian {"projectId":"masagaian","projectNumber":"153131579116","displayName":"masagaian","name":"projects/masagaian","resources":{"hostingSite":"masagaian"},"state":"ACTIVE"}
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
