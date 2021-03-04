@@ -5,7 +5,6 @@ function Project(props) {
     return (
         <ProjectMain>
             <div id="carouselExampleSlidesOnly" className="carousel slide" data-ride="carousel">
-                
                     <ImageCoures>
                     <div className="carousel-inner">
                         <div className="carousel-item active">
@@ -21,7 +20,7 @@ function Project(props) {
                         </div>
 
                         <div className="carousel-item">
-                            <img className="d-block" src={props.src4} alt="forth slide"/>
+                            <img className="d-block mx-auto" src={props.src4} alt="forth slide"/>
                         </div>
 
                         <div className="carousel-item">
@@ -29,7 +28,16 @@ function Project(props) {
                         </div>
                         
                     </div>
+                    <a class="carousel-control-prev" href="#carouselExampleSlidesOnly" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleSlidesOnly" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
                     </ImageCoures>
+                    
                 
             </div>
             <div>

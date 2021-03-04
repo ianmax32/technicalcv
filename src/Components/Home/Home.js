@@ -22,33 +22,41 @@ function Home() {
             <div id="carouselExampleSlidesOnly" className="carousel slide" data-ride="carousel">
                 <div className="carousel-inner">
                     <div className="carousel-item active">
-                        <img className="rounded-10 mx-auto d-block w-50" src="./languageicons/java.jpg" alt="First slide"/>
+                        <img className="rounded-10 mx-auto d-block w-50" src="./java.jpg" alt="First slide"/>
                     </div>
                     <div className="carousel-item">
-                        <img className="rounded-10 mx-auto d-block w-50" src="./languageicons/csharp.jpg" alt="Second slide"/>
+                        <img className="rounded-10 mx-auto d-block w-50" src="./csharp.jpg" alt="Second slide"/>
                     </div>
                     <div className="carousel-item">
-                        <img className="rounded-10 mx-auto d-block w-50" src="./languageicons/asp.png" alt="Third slide"/>
+                        <img className="rounded-10 mx-auto d-block w-50" src="./asp.png" alt="Third slide"/>
                     </div>
                     <div className="carousel-item">
-                        <img className="rounded-10 mx-auto d-block w-50" src="./languageicons/android.png" alt="Third slide"/>
+                        <img className="rounded-10 mx-auto d-block w-50" src="./android.png" alt="Third slide"/>
                     </div>
                     <div className="carousel-item">
-                        <img className="rounded-10 mx-auto d-block w-50" src="./languageicons/css.jpg" alt="Third slide"/>
+                        <img className="rounded-10 mx-auto d-block w-50" src="./css.jpg" alt="Third slide"/>
                     </div>
                     <div className="carousel-item">
-                        <img className="rounded-10 mx-auto d-block w-50" src="./languageicons/javaee.png" alt="Third slide"/>
+                        <img className="rounded-10 mx-auto d-block w-50" src="./javaee.png" alt="Third slide"/>
                     </div>
                     <div className="carousel-item">
-                        <img className="rounded-10 mx-auto d-block w-50" src="./languageicons/javascript.png" alt="Third slide"/>
+                        <img className="rounded-10 mx-auto d-block w-50" src="./javascript.png" alt="Third slide"/>
                     </div>
                     <div className="carousel-item">
-                        <img className="rounded-10 mx-auto d-block w-50" src="./languageicons/react.png" alt="Third slide"/>
+                        <img className="rounded-10 mx-auto d-block w-50" src="./react.png" alt="Third slide"/>
                     </div>
                     <div className="carousel-item">
-                        <img className="rounded-10 mx-auto d-block w-50" src="./languageicons/HTML5.png" alt="Third slide"/>
+                        <img className="rounded-10 mx-auto d-block w-50" src="./HTML5.png" alt="Third slide"/>
                     </div>
                 </div>
+                <a className="carousel-control-prev" href="#carouselExampleSlidesOnly" role="button" data-slide="prev">
+                    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span className="sr-only">Previous</span>
+                </a>
+                <a className="carousel-control-next" href="#carouselExampleSlidesOnly" role="button" data-slide="next">
+                    <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span className="sr-only">Next</span>
+                </a>
             </div>
             </HomeCoures>
         </HomeMain>
