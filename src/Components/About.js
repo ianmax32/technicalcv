@@ -45,6 +45,10 @@ function About() {
 
                 <AboutInfo>
                 <h1>EXPERIENCE</h1>
+                <ul>
+                    <li>Data structures Tutor (North West University Vaal Campus)</li>
+                    <li>Customer Collection Deport Assistant (Delta Beverages)</li>
+                </ul>
                 </AboutInfo>
                 
             </AboutMain>
@@ -60,7 +64,7 @@ const AboutMain = styled.div`
     background-size: cover;
     color:white;
     margin:1px;
-    height:auto;
+    height:100vh;
    
 `;
 
@@ -70,7 +74,10 @@ const AboutInfo = styled.div`
     border:1px solid #bfbfbf;
     border-radius:10px;
     padding: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom:15px;
-    width:100%;
+    width:75%;
     margin-bottom:15px;
 `;

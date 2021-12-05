@@ -4,6 +4,7 @@ import emailjs from 'emailjs-com'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faFacebookf,faInstagram } from '@fortawesome/free-solid-svg-icons'
 
+
 class Contact extends React.Component {
     constructor(props){
         super(props);
@@ -40,6 +41,7 @@ class Contact extends React.Component {
             disabled:true
         })
         alert('Email has been sent.');
+        this.props.history.push('/');
     }
 
     sendEmail(e){
@@ -72,7 +74,7 @@ class Contact extends React.Component {
 export default Contact
 const ContactMain = styled.div`
     margin:1px;
-    height: 100%;
+    height: 100vh;
     position: relative;
     background-image:url('./contactbackground.jpg');
     background-position: center; /* Center the image */

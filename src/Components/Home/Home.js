@@ -11,7 +11,7 @@ function Home() {
             <h5>Hi , i am</h5>
             <h1>Ian Masaga</h1>
             <h3>Final year BSc IT Student</h3>
-            <p className='pb-15'>I am a talented individual with strong communication skills, team spirit, and currently in
+            <p className='pb-15 blockquote'>I am a talented individual with strong communication skills, team spirit, and currently in
             my final year, major in BSc in Information Technology hoping to gain experience on the 
             position of Software Developer. Bringing expertise in writing full-stack code to support multiple platforms, 
             including web, android, and desktop applications, and a solid grasp of data structures and object- oriented designs</p>
@@ -69,7 +69,7 @@ export default Home
 const HomeMain = styled.div`
     background-image:url('./homebackground.jpg');
     background-color: #cccccc; /* Used if the image is unavailable */
-    height: 670px; /* You must set a specified height */
+    height: 100vh; /* You must set a specified height */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover;
